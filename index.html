@@ -69,7 +69,7 @@
     ];
   
     noButton.addEventListener('click', function() {
-      if (noClickCount < 1000) {
+      if (noClickCount < 5000) {
         noClickCount++;
         imageDisplay.src = imagePaths[noClickCount];
         buttonHeight += 35; // Increase height by 5px on each click
@@ -79,7 +79,7 @@
         yesButton.style.width = `${buttonWidth}px`;
         yesButton.style.fontSize = `${fontSize}px`; // Update font size
         if (noClickCount < 6) {
-          noButton.textContent = ["لا", "متأكدة؟", "رورو", "انت بتكسري قلبي علي فكره", "هعيط" ,"مينفعش كده والله" , "نجرب طب"][noClickCount];
+          noButton.textContent = ["لا", "متأكدة؟", "رورو", "انت بتكسري قلبي علي فكره", "هعيط" ,"مينفعش كده والله" ][noClickCount];
         }
       }
     });
